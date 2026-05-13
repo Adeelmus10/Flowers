@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowers for</title>
+    <h1>ZARAH AKA SKEEBALL WINNER</h1>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to top, #87ceeb, #ffffff);
+      overflow: hidden;
+    }
+
+    .garden {
+      display: flex;
+      gap: 80px;
+    }
+
+    .flower {
+      position: relative;
+      width: 120px;
+      height: 220px;
+    }
+
+    /* Stem */
+    .stem {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 10px;
+      height: 140px;
+      background: green;
+      transform: translateX(-50%);
+      border-radius: 5px;
+    }
+
+    /* Center */
+    .center {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      width: 35px;
+      height: 35px;
+      background: gold;
+      border-radius: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    /* Petals */
+    .petal {
+      position: absolute;
+      width: 50px;
+      height: 80px;
+      background: pink;
+      border-radius: 50%;
+      top: 20px;
+      left: 50%;
+      transform-origin: bottom center;
+      transform: translateX(-50%) scale(0);
+      animation: bloom 2s ease forwards;
+    }
+
+    .petal:nth-child(1) {
+      transform: translateX(-50%) rotate(0deg) scale(0);
+      animation-delay: 0.2s;
+    }
+
+    .petal:nth-child(2) {
+      transform: translateX(-50%) rotate(45deg) scale(0);
+      animation-delay: 0.4s;
+    }
+
+    .petal:nth-child(3) {
+      transform: translateX(-50%) rotate(90deg) scale(0);
+      animation-delay: 0.6s;
+    }
+
+    .petal:nth-child(4) {
+      transform: translateX(-50%) rotate(135deg) scale(0);
+      animation-delay: 0.8s;
+    }
+
+    .petal:nth-child(5) {
+      transform: translateX(-50%) rotate(180deg) scale(0);
+      animation-delay: 1s;
+    }
+
+    .petal:nth-child(6) {
+      transform: translateX(-50%) rotate(225deg) scale(0);
+      animation-delay: 1.2s;
+    }
+
+    .petal:nth-child(7) {
+      transform: translateX(-50%) rotate(270deg) scale(0);
+      animation-delay: 1.4s;
+    }
+
+    .petal:nth-child(8) {
+      transform: translateX(-50%) rotate(315deg) scale(0);
+      animation-delay: 1.6s;
+    }
+
+    @keyframes bloom {
+      to {
+        transform: translateX(-50%) rotate(var(--rotate)) scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="garden">
+    <div class="flower">
+      <div class="stem"></div>
+
+      <div class="petal" style="--rotate:0deg;"></div>
+      <div class="petal" style="--rotate:45deg;"></div>
+      <div class="petal" style="--rotate:90deg;"></div>
+      <div class="petal" style="--rotate:135deg;"></div>
+      <div class="petal" style="--rotate:180deg;"></div>
+      <div class="petal" style="--rotate:225deg;"></div>
+      <div class="petal" style="--rotate:270deg;"></div>
+      <div class="petal" style="--rotate:315deg;"></div>
+
+      <div class="center"></div>
+    </div>
+  </div>
+
+</body>
+</html>
