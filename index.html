@@ -3,22 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flowers for</title>
-    <h1>ZARAH AKA SKEEBALL WINNER</h1>
+  <title>Blooming Flower</title>
+
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
-      background: linear-gradient(to top, #87ceeb, #ffffff);
+      background: linear-gradient(to top, #c685e3, #ffffff);
       overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 40px;
+      color: #ff4f81;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: -10px;
+      color: #ff4f81;
+      font-weight: normal;
+      text-align: center;
     }
 
     .garden {
+      margin-top: 50px;
       display: flex;
-      gap: 80px;
+      justify-content: center;
+      align-items: center;
     }
 
     .flower {
@@ -57,7 +75,7 @@
       position: absolute;
       width: 50px;
       height: 80px;
-      background: pink;
+      background: #fb80d9;
       border-radius: 50%;
       top: 20px;
       left: 50%;
@@ -113,10 +131,15 @@
     }
   </style>
 </head>
+
 <body>
+
+  <h1>For Zarah 🌸</h1>
+  <h2>AKA Skeeball Winner</h2>
 
   <div class="garden">
     <div class="flower">
+
       <div class="stem"></div>
 
       <div class="petal" style="--rotate:0deg;"></div>
@@ -129,6 +152,7 @@
       <div class="petal" style="--rotate:315deg;"></div>
 
       <div class="center"></div>
+
     </div>
   </div>
 
